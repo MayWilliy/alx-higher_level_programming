@@ -2,19 +2,31 @@
 
 
 class Square:
+    """
+    This is a Square class that defines a square with a getter and setter for size.
+    """
 
     def __init__(self, size=0, position=(0, 0)):
-        """This function initializes a new square."""
+       """
+        Initialize a square with the given size.
+        Args:
+            size (int, optional): The size of the square (default is 0).
+        """ 
         self.size = size
         self.position = position
 
     @property
     def size(self):
-        """This function is used to get/set the current size of the square."""
+         """Getter method to retrieve the size."""
         return (self.__size)
 
     @size.setter
     def size(self, value):
+         """
+        Setter method to set the size.
+        Args:
+            value (int): The size of the square.
+        """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         elif value < 0:
