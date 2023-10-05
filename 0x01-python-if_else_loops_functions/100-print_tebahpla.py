@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-for j in range(ord('z') and ord('a') -1, -1):
-    if (ord('z') - j) % 2 == 0:
-        print(chr(j), end="")
-    else:
-        print(chr(j - 32), end="")
+i = 0
+for c in range(ord('z'), ord('a') - 1, -1):
+    print("{}".format(chr(c - i)), end="")
+    i = 32 if i == 0 else 0
