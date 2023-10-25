@@ -11,7 +11,7 @@ class Square:
 	instance private atrribute
 	"""
 	def size(self):
-		return self.__size
+		return (self.__size)
 	""" property setter def size(self, value): to set it
 	raise typeerror and valueerror with message
 	instantiation with args
@@ -25,5 +25,4 @@ class Square:
 	""" public instance method
 	"""
 	def area(self):
-		return self.__size * self.__size
-	
+		return (self.__size * self.__size)
