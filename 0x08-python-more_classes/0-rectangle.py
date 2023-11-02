@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 
-"""empty class Rectangle that defines a rectangle
+"""
+Empty class Rectangle that defines a rectangle
 """
 
-"""empty class"""
+
 class Rectangle:
-	pass
+    """Empty class"""
+    pass
