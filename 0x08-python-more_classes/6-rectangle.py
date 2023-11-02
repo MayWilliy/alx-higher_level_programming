@@ -97,7 +97,7 @@ class Rectangle:
     def __repr__(self):
         return f"Rectangle({self.__width}, {self.__height}"
     """
-     method is now added to the class, and when an instance of
+     method is now added to the class, and when an instance of 
      Rectangle is deleted, it will print "Bye rectangle..."
     """
     def __del__(self):
