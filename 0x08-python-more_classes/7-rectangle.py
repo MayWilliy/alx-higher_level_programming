@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-#6-rectangle.py
-"""This python script defines a class Rectangle"""
+#7-rectangle.py
+"""The python script defines a class Rectangle"""
 
 
 class Rectangle:
     """
-    A class that defines properties of a rectangle(based on 5-rectangle.py).
+    A Class that defines the properties of rectangle(based on 6-rectangle.py).
 
     Attributes:
         width (int): The width of the rectangle.
@@ -13,9 +13,10 @@ class Rectangle:
     """
 
     number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
-        """This creates new instances of Rectangle.
+        """This function creates new instances of Rectangle.
 
         Args:
             width (int, optional): The width of rectangle. Defaults to 0.
@@ -30,13 +31,13 @@ class Rectangle:
         """Retrieves the width.
 
         Returns:
-            int: the width of the rectangle.
+            int: returns the width of the rectangle.
         """
         return self.__width
 
     @property
     def height(self):
-        """Retrieves the height.
+        """retrieves the height.
 
         Returns:
             int: the height of the rectangle.
@@ -63,7 +64,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        """The Property setter for height of recyangle.
+        """The Property setter for height of the rectangle.
 
         Args:
             value (int): The height of the rectangle.
@@ -80,7 +81,7 @@ class Rectangle:
             self.__height = value
 
     def area(self):
-        """This calculates area of a rectangle.
+        """This function calculates the area of a rectangle.
 
         Returns:
             int: area.
@@ -88,7 +89,7 @@ class Rectangle:
         return self.__height * self.__width
 
     def perimeter(self):
-        """This calculates The perimeter of a rectangle
+        """This function calculates the perimeter of a rectangle
 
         Returns:
             int: perimeter.
@@ -111,17 +112,16 @@ class Rectangle:
 
         for i in range(self.__height):
             for j in range(self.__width):
-                rectangle.append("#")
+                rectangle.append(str(self.print_symbol))
             rectangle.append("\n")
 
-        # remove blank line
+        # This removes a blank line
         rectangle.pop()
 
         return "".join(rectangle)
 
     def __repr__(self):
-        """
-        This returns a string representation of the rectangle.
+        """This Returns a string representation of the rectangle.
 
         Returns:
             str: the rectangle representation.
@@ -130,7 +130,7 @@ class Rectangle:
 
     def __del__(self):
         """
-        This deletes an instance of a class
+        This Deletes an instance of a class
         """
         print("{:s}".format("Bye rectangle..."))
         type(self).number_of_instances -= 1
