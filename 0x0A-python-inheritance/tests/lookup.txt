@@ -1,0 +1,13 @@
+import the functions to be tested:
+
+>>> import sys
+>>> sys.path.insert(0, '..')
+>>> lookup = __import__('0-lookup').lookup
+
+
+run the test:
+
+>>> lookup()
+Traceback (most recent call last):
+...
+TypeError: lookup() missing 1 required positional argument: 'obj'

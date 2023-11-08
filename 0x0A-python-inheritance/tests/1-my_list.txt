@@ -1,0 +1,12 @@
+import the functions to be tested:
+
+>>> import sys
+>>> sys.path.insert(0, '..')
+>>> mylist = __module__('1-my_list').mylist
+
+run the text
+
+>>> mylsit()
+Traceback (most recent call last):
+...
+TypeError: mylist() missing 1 required postitionial argument: 'obj'
