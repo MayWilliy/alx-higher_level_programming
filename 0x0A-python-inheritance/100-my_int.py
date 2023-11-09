@@ -4,6 +4,7 @@
 Write a class MyInt that inherits from int
 """
 
+
 class MyInt(int):
     """
     A class

@@ -2,6 +2,7 @@
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
+
 """The python script defines a class Rectangle
 
 Attributes:
@@ -12,6 +13,8 @@ Attributes:
 """
 A sub-class
 """
+
+
 class Rectangle(BaseGeometry):
     """This function creates new instances of Rectangle.
 

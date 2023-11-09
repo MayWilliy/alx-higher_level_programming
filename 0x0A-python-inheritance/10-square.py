@@ -2,6 +2,7 @@
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
+
 """The python script defines a class Rectangle
 
 Attributes:
@@ -12,6 +13,8 @@ Attributes:
 """
 A sub-class
 """
+
+
 class Rectangle(BaseGeometry):
     """
     This function creates new instances of Rectangle.
@@ -43,7 +46,8 @@ class Rectangle(BaseGeometry):
         Returns:
             str: A string representation of rectangle.
         """
-        return "[Rectangle] {:d}/{:d}".format(self.__width,self.__height)
+        return "[Rectangle] {:d}/{:d}".format(self.__width, self.__height)
+
 
 class Square(Rectangle):
     """
@@ -71,4 +75,3 @@ class Square(Rectangle):
             int: the area of the square.
         """
         return self.__size ** 2
-

@@ -1,5 +1,6 @@
 #!/usr/bin/pyhton3
 
+
 class BaseGeometry:
     """
     empty class
@@ -9,7 +10,7 @@ class BaseGeometry:
         expection with message
     """
     def area(self):
-        raise("area() is not implemented")
+        raise ("area() is not implemented")
     """
     Arg:
         public isinstance

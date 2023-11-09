@@ -4,6 +4,7 @@
 Write a class BaseGeometry (based on 5-base_geometry.py).
 """
 
+
 class BaseGeometry:
     """
     A class
@@ -16,4 +17,4 @@ class BaseGeometry:
         raise
             exception with a messsage
         """
-        raise("area() is not implemented")
+        raise ("area() is not implemented")
